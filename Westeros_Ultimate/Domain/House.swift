@@ -28,7 +28,7 @@ final class House {
 
 extension House {
     func add(person: Person) {
-        guard person.house.name == self.name else {return}
+        guard person.house == self else {return}
         _members.insert(person)
     }
 }
@@ -36,5 +36,36 @@ extension House {
 extension House {
     var count: Int {
         return _members.count
+    }
+}
+
+// MARK: - Proxy
+extension House {
+    var proxy: String {
+        return "\(name) \(words) \(count)"
+    }
+    var proxyForComparation: String {
+        return name.uppercased()
+    }
+}
+
+// MARK: - Hashable
+extension House: Hashable {
+    var hashValue: Int {
+        return proxy.hashValue
+    }
+}
+
+// MARK: - Equatable
+extension House: Equatable {
+    static func == (lhs: House, rhs: House) -> Bool {
+        return lhs.proxy == rhs.proxy
+    }
+}
+
+// MARK: - Comparable
+extension House: Comparable {
+    static func <(lhs: House, rhs: House) -> Bool {
+        return lhs.proxyForComparation < rhs.proxyForComparation
     }
 }

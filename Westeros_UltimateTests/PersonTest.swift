@@ -11,17 +11,30 @@ import XCTest
 
 class PersonTest: XCTestCase {
     
-    var starkHouse: House!
     var starkSigil: Sigil!
-    var ned: Person!
+    var lannisterSigil: Sigil!
+    
+    var starkHouse: House!
+    var lannisterHouse: House!
+    
+    var robb: Person!
     var arya: Person!
+    var tyrion: Person!
+    
     
     override func setUp() {
-        super.setUp()
         starkSigil = Sigil(image: UIImage(), description: "Lobo Huargo")
+        lannisterSigil = Sigil(image: UIImage(), description: "Leon Rampante")
+        
         starkHouse = House(name: "Stark", sigil: starkSigil, words: "Se acerca el invierno")
-        ned = Person(name: "Eddard", alias: "Ned", house: starkHouse)
+        lannisterHouse = House(name: "Lannister", sigil: lannisterSigil, words: "Oye mi rugido")
+        
+        robb = Person(name: "Robb", alias: "El Joven Lobo", house: starkHouse)
         arya = Person(name: "Arya", house: starkHouse)
+        tyrion = Person(name: "Tyrion", alias: "El Enano", house: lannisterHouse)
+        
+        
+        super.setUp()
     }
     
     override func tearDown() {
@@ -30,11 +43,21 @@ class PersonTest: XCTestCase {
     }
     
     func testPersonExistence() {
-        XCTAssertNotNil(ned)
+        XCTAssertNotNil(robb)
         XCTAssertNotNil(arya)
     }
     
     func testPersonFullName() {
-        XCTAssertEqual(ned.fullName, "Eddard Stark")
+        XCTAssertEqual(robb.fullName, "Robb Stark")
+    }
+
+    func testPersonEquality() {
+        let enano = Person(name: "Tyrion", alias: "El Enano", house: lannisterHouse)
+        // Identidad
+        XCTAssertEqual(robb, robb)
+        // Igualdad
+        XCTAssertEqual(enano, tyrion)
+        //Desigualdad
+        XCTAssertNotEqual(robb, arya)
     }
 }

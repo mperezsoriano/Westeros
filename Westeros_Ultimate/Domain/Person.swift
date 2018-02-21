@@ -38,14 +38,16 @@ extension Person {
     }
 }
 
+// MARK: - Hashable
 extension Person: Hashable {
     var hashValue: Int {
         return proxy.hashValue
     }
 }
 
+// MARK: - Equatable
 extension Person: Equatable {
-    static func ==(lhs: Person, rhs: Person) -> Bool {
-        return lhs.hashValue == rhs.hashValue
+    static func == (lhs: Person, rhs: Person) -> Bool {
+        return lhs.proxy == rhs.proxy
     }
 }

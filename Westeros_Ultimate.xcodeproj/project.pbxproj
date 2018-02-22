@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77453273203DF11400575232 /* UIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77453272203DF11400575232 /* UIViewController+Additions.swift */; };
+		77453275203E18A900575232 /* RepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77453274203E18A900575232 /* RepositoryTest.swift */; };
+		77453277203E197000575232 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77453276203E197000575232 /* Repository.swift */; };
+		77453279203ECC0B00575232 /* DataFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77453278203ECC0B00575232 /* DataFactory.swift */; };
 		77D7DB2D203C290800F0F1BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D7DB2C203C290800F0F1BD /* AppDelegate.swift */; };
 		77D7DB34203C290800F0F1BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77D7DB33203C290800F0F1BD /* Assets.xcassets */; };
 		77D7DB37203C290800F0F1BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77D7DB35203C290800F0F1BD /* LaunchScreen.storyboard */; };
@@ -38,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		77453272203DF11400575232 /* UIViewController+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Additions.swift"; sourceTree = "<group>"; };
+		77453274203E18A900575232 /* RepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTest.swift; sourceTree = "<group>"; };
+		77453276203E197000575232 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		77453278203ECC0B00575232 /* DataFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFactory.swift; sourceTree = "<group>"; };
 		77D7DB29203C290800F0F1BD /* Westeros_Ultimate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Westeros_Ultimate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77D7DB2C203C290800F0F1BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77D7DB33203C290800F0F1BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,6 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		77453271203DF0DF00575232 /* UIKitExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				77453272203DF11400575232 /* UIViewController+Additions.swift */,
+			);
+			path = UIKitExtensions;
+			sourceTree = "<group>";
+		};
 		77D7DB20203C290700F0F1BD = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +117,7 @@
 		77D7DB2B203C290800F0F1BD /* Westeros_Ultimate */ = {
 			isa = PBXGroup;
 			children = (
+				77453271203DF0DF00575232 /* UIKitExtensions */,
 				77D7DB56203C512300F0F1BD /* Domain */,
 				77D9B5E5203D9E6C00D50868 /* Controllers */,
 				77D9B5E0203D9B7E00D50868 /* Assets */,
@@ -119,6 +136,7 @@
 				77D7DB4C203C3A4A00F0F1BD /* HouseTest.swift */,
 				77D7DB50203C453800F0F1BD /* SigilTest.swift */,
 				77D7DB54203C4FD700F0F1BD /* PersonTest.swift */,
+				77453274203E18A900575232 /* RepositoryTest.swift */,
 			);
 			path = Westeros_UltimateTests;
 			sourceTree = "<group>";
@@ -129,6 +147,8 @@
 				77D7DB4E203C3D1000F0F1BD /* House.swift */,
 				77D7DB52203C4A7800F0F1BD /* Sigil.swift */,
 				77D7DB57203C514A00F0F1BD /* Person.swift */,
+				77453276203E197000575232 /* Repository.swift */,
+				77453278203ECC0B00575232 /* DataFactory.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -267,10 +287,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77453277203E197000575232 /* Repository.swift in Sources */,
 				77D9B5E3203D9CEB00D50868 /* HouseDetailViewController.swift in Sources */,
 				77D7DB53203C4A7800F0F1BD /* Sigil.swift in Sources */,
+				77453273203DF11400575232 /* UIViewController+Additions.swift in Sources */,
 				77D7DB4F203C3D1000F0F1BD /* House.swift in Sources */,
 				77D7DB2D203C290800F0F1BD /* AppDelegate.swift in Sources */,
+				77453279203ECC0B00575232 /* DataFactory.swift in Sources */,
 				77D7DB58203C514A00F0F1BD /* Person.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +305,7 @@
 				77D7DB51203C453800F0F1BD /* SigilTest.swift in Sources */,
 				77D7DB4D203C3A4A00F0F1BD /* HouseTest.swift in Sources */,
 				77D7DB55203C4FD700F0F1BD /* PersonTest.swift in Sources */,
+				77453275203E18A900575232 /* RepositoryTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

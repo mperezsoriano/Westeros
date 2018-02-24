@@ -25,8 +25,8 @@ class HouseTest: XCTestCase {
         starkSigil = Sigil(image: UIImage(), description: "Lobo Huargo")
         lannisterSigil = Sigil(image: UIImage(), description: "Leon Rampante")
         
-        starkHouse = House(name: "Stark", sigil: starkSigil, words: "Se acerca el invierno")
-        lannisterHouse = House(name: "Lannister", sigil: lannisterSigil, words: "Oye mi rugido")
+        starkHouse = House(name: "Stark", sigil: starkSigil, words: "Se acerca el invierno", wiki: URL(string: "http://awoiaf.westeros.org/index.php/House_Stark")!)
+        lannisterHouse = House(name: "Lannister", sigil: lannisterSigil, words: "Oye mi rugido", wiki: URL(string: "http://awoiaf.westeros.org/index.php/House_Lannister")!)
         
         robb = Person(name: "Robb", alias: "El Joven Lobo", house: starkHouse)
         arya = Person(name: "Arya", house: starkHouse)
@@ -51,10 +51,14 @@ class HouseTest: XCTestCase {
         XCTAssertEqual(starkHouse.count, 2)
         starkHouse.add(person: tyrion)
         XCTAssertEqual(starkHouse.count, 2)
+        
+        let cersei = Person(name: "Cersei", house: lannisterHouse)
+        let jaime = Person(name: "Jaime", alias: "el Matarreyes", house: lannisterHouse)
+        starkHouse.add(persons: cersei, jaime)
     }
     
     func testHouseEquality() {
-        let starkHouseCopy = House(name: "Stark", sigil: starkSigil, words: "Se acerca el invierno")
+        let starkHouseCopy = House(name: "Stark", sigil: starkSigil, words: "Se acerca el invierno", wiki: URL(string: "http://awoiaf.westeros.org/index.php/House_Stark")!)
         // Identidad
         XCTAssertEqual(starkHouse, starkHouse)
         // Igualdad
@@ -68,7 +72,6 @@ class HouseTest: XCTestCase {
     }
     
     func testHouseComparison() {
-        
         XCTAssertLessThan(lannisterHouse, starkHouse)
     }
 }

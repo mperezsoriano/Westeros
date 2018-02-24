@@ -11,6 +11,10 @@
 		77453275203E18A900575232 /* RepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77453274203E18A900575232 /* RepositoryTest.swift */; };
 		77453277203E197000575232 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77453276203E197000575232 /* Repository.swift */; };
 		77453279203ECC0B00575232 /* DataFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77453278203ECC0B00575232 /* DataFactory.swift */; };
+		7745327C203F607E00575232 /* WikiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7745327A203F607E00575232 /* WikiViewController.swift */; };
+		7745327D203F607E00575232 /* WikiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7745327B203F607E00575232 /* WikiViewController.xib */; };
+		774532802040678F00575232 /* HouseListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7745327E2040678F00575232 /* HouseListTableViewController.swift */; };
+		774532812040678F00575232 /* HouseListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7745327F2040678F00575232 /* HouseListTableViewController.xib */; };
 		77D7DB2D203C290800F0F1BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D7DB2C203C290800F0F1BD /* AppDelegate.swift */; };
 		77D7DB34203C290800F0F1BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77D7DB33203C290800F0F1BD /* Assets.xcassets */; };
 		77D7DB37203C290800F0F1BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77D7DB35203C290800F0F1BD /* LaunchScreen.storyboard */; };
@@ -29,6 +33,13 @@
 		77D9B5DF203D9B0600D50868 /* Targaryen.png in Resources */ = {isa = PBXBuildFile; fileRef = 77D9B5D8203D9B0600D50868 /* Targaryen.png */; };
 		77D9B5E3203D9CEB00D50868 /* HouseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D9B5E1203D9CEB00D50868 /* HouseDetailViewController.swift */; };
 		77D9B5E4203D9CEB00D50868 /* HouseDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77D9B5E2203D9CEB00D50868 /* HouseDetailViewController.xib */; };
+		77FDFD50204158810066B067 /* TullyIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77FDFD4A204158800066B067 /* TullyIcon.jpg */; };
+		77FDFD51204158810066B067 /* BaratheonIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77FDFD4B204158800066B067 /* BaratheonIcon.jpg */; };
+		77FDFD52204158810066B067 /* ArrynIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77FDFD4C204158800066B067 /* ArrynIcon.jpg */; };
+		77FDFD53204158810066B067 /* LannisterIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77FDFD4D204158800066B067 /* LannisterIcon.jpg */; };
+		77FDFD54204158810066B067 /* GreyjoyIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77FDFD4E204158800066B067 /* GreyjoyIcon.jpg */; };
+		77FDFD55204158810066B067 /* StarkIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77FDFD4F204158810066B067 /* StarkIcon.jpg */; };
+		77FDFD5920415A830066B067 /* TargaryenIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77FDFD5820415A830066B067 /* TargaryenIcon.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +57,10 @@
 		77453274203E18A900575232 /* RepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTest.swift; sourceTree = "<group>"; };
 		77453276203E197000575232 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		77453278203ECC0B00575232 /* DataFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFactory.swift; sourceTree = "<group>"; };
+		7745327A203F607E00575232 /* WikiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiViewController.swift; sourceTree = "<group>"; };
+		7745327B203F607E00575232 /* WikiViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WikiViewController.xib; sourceTree = "<group>"; };
+		7745327E2040678F00575232 /* HouseListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListTableViewController.swift; sourceTree = "<group>"; };
+		7745327F2040678F00575232 /* HouseListTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HouseListTableViewController.xib; sourceTree = "<group>"; };
 		77D7DB29203C290800F0F1BD /* Westeros_Ultimate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Westeros_Ultimate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77D7DB2C203C290800F0F1BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77D7DB33203C290800F0F1BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -68,6 +83,13 @@
 		77D9B5D8203D9B0600D50868 /* Targaryen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Targaryen.png; sourceTree = "<group>"; };
 		77D9B5E1203D9CEB00D50868 /* HouseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDetailViewController.swift; sourceTree = "<group>"; };
 		77D9B5E2203D9CEB00D50868 /* HouseDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HouseDetailViewController.xib; sourceTree = "<group>"; };
+		77FDFD4A204158800066B067 /* TullyIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TullyIcon.jpg; sourceTree = "<group>"; };
+		77FDFD4B204158800066B067 /* BaratheonIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BaratheonIcon.jpg; sourceTree = "<group>"; };
+		77FDFD4C204158800066B067 /* ArrynIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ArrynIcon.jpg; sourceTree = "<group>"; };
+		77FDFD4D204158800066B067 /* LannisterIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LannisterIcon.jpg; sourceTree = "<group>"; };
+		77FDFD4E204158800066B067 /* GreyjoyIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GreyjoyIcon.jpg; sourceTree = "<group>"; };
+		77FDFD4F204158810066B067 /* StarkIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = StarkIcon.jpg; sourceTree = "<group>"; };
+		77FDFD5820415A830066B067 /* TargaryenIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = TargaryenIcon.jpg; path = ../../../../../../../Users/manuelperezsoriano/Downloads/TargaryenIcon.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +178,13 @@
 		77D9B5E0203D9B7E00D50868 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				77FDFD4C204158800066B067 /* ArrynIcon.jpg */,
+				77FDFD4B204158800066B067 /* BaratheonIcon.jpg */,
+				77FDFD4E204158800066B067 /* GreyjoyIcon.jpg */,
+				77FDFD4D204158800066B067 /* LannisterIcon.jpg */,
+				77FDFD4F204158810066B067 /* StarkIcon.jpg */,
+				77FDFD5820415A830066B067 /* TargaryenIcon.jpg */,
+				77FDFD4A204158800066B067 /* TullyIcon.jpg */,
 				77D9B5D5203D9B0500D50868 /* Arryn.png */,
 				77D9B5D4203D9B0500D50868 /* Baratheon.png */,
 				77D9B5D2203D9B0400D50868 /* Greyjoy.png */,
@@ -172,6 +201,10 @@
 			children = (
 				77D9B5E1203D9CEB00D50868 /* HouseDetailViewController.swift */,
 				77D9B5E2203D9CEB00D50868 /* HouseDetailViewController.xib */,
+				7745327A203F607E00575232 /* WikiViewController.swift */,
+				7745327B203F607E00575232 /* WikiViewController.xib */,
+				7745327E2040678F00575232 /* HouseListTableViewController.swift */,
+				7745327F2040678F00575232 /* HouseListTableViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -262,14 +295,23 @@
 			files = (
 				77D9B5DF203D9B0600D50868 /* Targaryen.png in Resources */,
 				77D9B5DE203D9B0600D50868 /* Lannister.png in Resources */,
+				7745327D203F607E00575232 /* WikiViewController.xib in Resources */,
+				77FDFD50204158810066B067 /* TullyIcon.jpg in Resources */,
+				77FDFD54204158810066B067 /* GreyjoyIcon.jpg in Resources */,
 				77D9B5D9203D9B0600D50868 /* Greyjoy.png in Resources */,
+				77FDFD5920415A830066B067 /* TargaryenIcon.jpg in Resources */,
+				774532812040678F00575232 /* HouseListTableViewController.xib in Resources */,
 				77D9B5DD203D9B0600D50868 /* Stark.png in Resources */,
 				77D7DB37203C290800F0F1BD /* LaunchScreen.storyboard in Resources */,
 				77D9B5DC203D9B0600D50868 /* Arryn.png in Resources */,
+				77FDFD55204158810066B067 /* StarkIcon.jpg in Resources */,
+				77FDFD53204158810066B067 /* LannisterIcon.jpg in Resources */,
+				77FDFD52204158810066B067 /* ArrynIcon.jpg in Resources */,
 				77D9B5E4203D9CEB00D50868 /* HouseDetailViewController.xib in Resources */,
 				77D9B5DA203D9B0600D50868 /* Tully.png in Resources */,
 				77D7DB34203C290800F0F1BD /* Assets.xcassets in Resources */,
 				77D9B5DB203D9B0600D50868 /* Baratheon.png in Resources */,
+				77FDFD51204158810066B067 /* BaratheonIcon.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,10 +330,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				77453277203E197000575232 /* Repository.swift in Sources */,
+				7745327C203F607E00575232 /* WikiViewController.swift in Sources */,
 				77D9B5E3203D9CEB00D50868 /* HouseDetailViewController.swift in Sources */,
 				77D7DB53203C4A7800F0F1BD /* Sigil.swift in Sources */,
 				77453273203DF11400575232 /* UIViewController+Additions.swift in Sources */,
 				77D7DB4F203C3D1000F0F1BD /* House.swift in Sources */,
+				774532802040678F00575232 /* HouseListTableViewController.swift in Sources */,
 				77D7DB2D203C290800F0F1BD /* AppDelegate.swift in Sources */,
 				77453279203ECC0B00575232 /* DataFactory.swift in Sources */,
 				77D7DB58203C514A00F0F1BD /* Person.swift in Sources */,

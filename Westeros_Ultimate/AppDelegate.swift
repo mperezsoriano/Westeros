@@ -20,44 +20,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
 
         // Creamos los modelos
-        
         let houses = Repository.data.houses
         
-        let starkSigil = Sigil(image: UIImage(named: "Stark.png")!, description: "Lobo Huargo")
-        let starkHouse = House(name: "Stark", sigil: starkSigil, words: "Se acerca el invierno!")
-        
-        let lannisterSigil = Sigil(image: UIImage(named: "Lannister.png")!, description: "Leon Rampante")
-        let lannisterHouse = House(name: "Lannister", sigil: lannisterSigil, words: "Oye mi rugido!")
-        
-        let targaryenSigil = Sigil(image: UIImage(named: "Targaryen.png")!, description: "Dragon de Tres Cabezas")
-        let targaryenHouse = House(name: "Targaryen", sigil: targaryenSigil, words: "Fuego y sangre!")
-        
-        let tullySigil = Sigil(image: UIImage(named: "Tully.png")!, description: "Trucha Plateada")
-        let tullyHouse = House(name: "Targaryen", sigil: tullySigil, words: "Famila, deber, honor!")
+        let tableViewController = HouseListTableViewController(model: houses)
         
         // Creamos los controladores
-        let starkViewController = HouseDetailViewController(model: starkHouse)
-        let lannisterViewController = HouseDetailViewController(model: lannisterHouse)
-        let targaryenViewController = HouseDetailViewController(model: targaryenHouse)
-        let tullyViewController = HouseDetailViewController(model: tullyHouse)
+        //let controllers = houses.map { house in
+        //    return HouseDetailViewController(model: house)
+        //}
         
         // Creamos el combinador para el UINavigationControler
-        let starkNavigationController = UINavigationController(rootViewController: starkViewController)
-        let lannisterNavigationController = UINavigationController(rootViewController: lannisterViewController)
-        let targaryenNavigationController = UINavigationController(rootViewController: targaryenViewController)
-        let tullyNavigationController = UINavigationController(rootViewController: tullyViewController)
-        
-        // Creamos el combinador para el UItabBarController
-        let tabBarViewController = UITabBarController()
-        tabBarViewController.viewControllers = [
-            starkNavigationController,
-            lannisterNavigationController,
-            targaryenNavigationController,
-            tullyNavigationController
-        ]
+        //let navigationController = controllers.map { controller in
+        //    return UINavigationController(rootViewController: controller)
+        //}
 
+        // Creamos el combinador para el UItabBarController
+        //let tabBarViewController = UITabBarController()
+        //tabBarViewController.viewControllers = navigationController
+  
         // Asignamos el rootView
-        window?.rootViewController = tabBarViewController
+        //window?.rootViewController = tabBarViewController
+        
+        window?.rootViewController = UINavigationController(rootViewController: tableViewController)
         
         return true
     }

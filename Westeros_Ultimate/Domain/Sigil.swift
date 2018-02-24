@@ -12,9 +12,11 @@ import UIKit
 final class Sigil {
     let description: String
     let image: UIImage
+    let iconImage: UIImage
     
-    init(image: UIImage, description: String) {
+    init(image: UIImage, iconImage: UIImage, description: String) {
         self.image = image
+        self.iconImage = iconImage
         self.description = description
     }
 }

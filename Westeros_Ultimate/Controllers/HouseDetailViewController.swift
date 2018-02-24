@@ -32,14 +32,34 @@ class HouseDetailViewController: UIViewController {
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
         syncModelWithView()
     }
 }
 
+// MARK: - HouseDetailViewController
 extension HouseDetailViewController {
     func syncModelWithView() {
         houseNameLabel.text = "House \(model.name)"
         sigilImageView.image = model.sigil.image
         houseWordsLabel.text = model.words
+    }
+}
+
+// MARK: - setupUI()
+extension HouseDetailViewController {
+    func setupUI() {
+        let wikiButton = UIBarButtonItem(title: "Wiki", style: .plain, target: self, action: #selector(displayWiki))
+        navigationItem.rightBarButtonItem = wikiButton
+    }
+}
+
+extension HouseDetailViewController {
+    @objc func displayWiki() {
+        // Creamos el WikiVC
+        let wikiViewController = WikiViewController(model: model)
+        
+        // Hacemos un push
+        navigationController?.pushViewController(wikiViewController, animated: true)
     }
 }

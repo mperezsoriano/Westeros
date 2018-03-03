@@ -1,5 +1,9 @@
 # Practica del modulo Fundamentos de IOS 
 
+## Dispositivo
+
+Implementado para IPad
+
 ## Vistas y Navegacion
 
 La App tiene implementadas las sigientes view

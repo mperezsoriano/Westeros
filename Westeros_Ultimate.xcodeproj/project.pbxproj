@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7727F7A7204B22ED00FA0C1F /* TargaryenIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7727F7A6204B22ED00FA0C1F /* TargaryenIcon.jpg */; };
 		77453273203DF11400575232 /* UIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77453272203DF11400575232 /* UIViewController+Additions.swift */; };
 		77453275203E18A900575232 /* RepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77453274203E18A900575232 /* RepositoryTest.swift */; };
 		77453277203E197000575232 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77453276203E197000575232 /* Repository.swift */; };
@@ -25,7 +26,6 @@
 		77B137362046AAE200C9B07D /* SeasonListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77B137342046AAE200C9B07D /* SeasonListTableViewController.xib */; };
 		77B137392046CBE700C9B07D /* EpisodeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B137372046CBE700C9B07D /* EpisodeDetailViewController.swift */; };
 		77B1373A2046CBE700C9B07D /* EpisodeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77B137382046CBE700C9B07D /* EpisodeDetailViewController.xib */; };
-		77B1373C2046DA6A00C9B07D /* TargaryenIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77B1373B2046DA6A00C9B07D /* TargaryenIcon.jpg */; };
 		77B137432046FFDC00C9B07D /* EpisodeListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B137412046FFDC00C9B07D /* EpisodeListTableViewController.swift */; };
 		77B137442046FFDC00C9B07D /* EpisodeListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77B137422046FFDC00C9B07D /* EpisodeListTableViewController.xib */; };
 		77B3D2F12049B78600F9EEE5 /* episode41.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77B3D2E32049B78400F9EEE5 /* episode41.jpg */; };
@@ -89,6 +89,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7727F7A6204B22ED00FA0C1F /* TargaryenIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = TargaryenIcon.jpg; path = "../../../../../../../Users/manuelperezsoriano/.Trash/Juego de Tronos/TargaryenIcon.jpg"; sourceTree = "<group>"; };
 		77453272203DF11400575232 /* UIViewController+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Additions.swift"; sourceTree = "<group>"; };
 		77453274203E18A900575232 /* RepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTest.swift; sourceTree = "<group>"; };
 		77453276203E197000575232 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
@@ -107,7 +108,6 @@
 		77B137342046AAE200C9B07D /* SeasonListTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeasonListTableViewController.xib; sourceTree = "<group>"; };
 		77B137372046CBE700C9B07D /* EpisodeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetailViewController.swift; sourceTree = "<group>"; };
 		77B137382046CBE700C9B07D /* EpisodeDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeDetailViewController.xib; sourceTree = "<group>"; };
-		77B1373B2046DA6A00C9B07D /* TargaryenIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = TargaryenIcon.jpg; path = "../../../../../../../Users/manuelperezsoriano/Downloads/Juego de Tronos/TargaryenIcon.jpg"; sourceTree = "<group>"; };
 		77B137412046FFDC00C9B07D /* EpisodeListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeListTableViewController.swift; sourceTree = "<group>"; };
 		77B137422046FFDC00C9B07D /* EpisodeListTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeListTableViewController.xib; sourceTree = "<group>"; };
 		77B3D2E32049B78400F9EEE5 /* episode41.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = episode41.jpg; sourceTree = "<group>"; };
@@ -279,7 +279,7 @@
 				77FDFD4E204158800066B067 /* GreyjoyIcon.jpg */,
 				77FDFD4D204158800066B067 /* LannisterIcon.jpg */,
 				77FDFD4F204158810066B067 /* StarkIcon.jpg */,
-				77B1373B2046DA6A00C9B07D /* TargaryenIcon.jpg */,
+				7727F7A6204B22ED00FA0C1F /* TargaryenIcon.jpg */,
 				77FDFD4A204158800066B067 /* TullyIcon.jpg */,
 				77D9B5D5203D9B0500D50868 /* Arryn.png */,
 				77D9B5D4203D9B0500D50868 /* Baratheon.png */,
@@ -412,6 +412,7 @@
 				77B3D304204AF5EF00F9EEE5 /* person_cersei.jpg in Resources */,
 				77B137362046AAE200C9B07D /* SeasonListTableViewController.xib in Resources */,
 				77B3D30A204AF61200F9EEE5 /* person_robb.jpg in Resources */,
+				7727F7A7204B22ED00FA0C1F /* TargaryenIcon.jpg in Resources */,
 				77B3D2FC2049B78600F9EEE5 /* episode32.jpg in Resources */,
 				77FDFD5D2042B0380066B067 /* MembersListTableViewController.xib in Resources */,
 				77B3D2FA2049B78600F9EEE5 /* episode71.jpg in Resources */,
@@ -428,7 +429,6 @@
 				77D9B5DD203D9B0600D50868 /* Stark.png in Resources */,
 				77D7DB37203C290800F0F1BD /* LaunchScreen.storyboard in Resources */,
 				77D9B5DC203D9B0600D50868 /* Arryn.png in Resources */,
-				77B1373C2046DA6A00C9B07D /* TargaryenIcon.jpg in Resources */,
 				77FDFD55204158810066B067 /* StarkIcon.jpg in Resources */,
 				77FDFD53204158810066B067 /* LannisterIcon.jpg in Resources */,
 				77B3D2F42049B78600F9EEE5 /* episode62.jpg in Resources */,

@@ -20,6 +20,8 @@ final class Person {
         self.alias = alias
         self.house = house
         self.image = image
+        
+        house.add(person: self)
     }
     
     convenience init(name: String, house: House, image: UIImage) {

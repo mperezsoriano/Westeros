@@ -72,14 +72,6 @@ class MembersListTableViewController: UITableViewController {
         //notificationCenter.removeObserver(self)
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        
-        let notificationCenter = NotificationCenter.default
-        notificationCenter.removeObserver(self)
-        
-    }
-    
     @objc func houseDidChange(notification: Notification) {
         // Extrar el userInfo de la notificacion si no esta vacia
         guard let info = notification.userInfo else {

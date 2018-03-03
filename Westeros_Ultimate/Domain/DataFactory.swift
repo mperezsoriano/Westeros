@@ -113,14 +113,15 @@ final class DataFactory: DataFactoy{
         let jaime = Person(name: "Jaime", alias: "el Matarreyes", house: lannisterHouse, image: UIImage(named: "person_jaime.jpg")!)
         let daenerys = Person(name: "Daenerys", alias: "Madre de Dragones", house: targaryenHouse, image: UIImage(named: "person_daenerys.jpg")!)
         
+        let _ = [robb, arya, tyrion, cersei, jaime, daenerys]
         
         // Add character to houses
-        starkHouse.add(person: robb)
-        starkHouse.add(person: arya)
-        lannisterHouse.add(person: tyrion)
-        lannisterHouse.add(person: cersei)
-        targaryenHouse.add(person: jaime)
-        targaryenHouse.add(person: daenerys)
+        //starkHouse.add(person: robb)
+        //starkHouse.add(person: arya)
+        //lannisterHouse.add(person: tyrion)
+        //lannisterHouse.add(person: cersei)
+        //targaryenHouse.add(person: jaime)
+        //targaryenHouse.add(person: daenerys)
         
         return [starkHouse, lannisterHouse, targaryenHouse, tullyHouse, arrynHouse, baratheonHouse, greyjoyHouse].sorted()
     }

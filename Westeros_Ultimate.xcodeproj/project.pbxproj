@@ -15,6 +15,38 @@
 		7745327D203F607E00575232 /* WikiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7745327B203F607E00575232 /* WikiViewController.xib */; };
 		774532802040678F00575232 /* HouseListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7745327E2040678F00575232 /* HouseListTableViewController.swift */; };
 		774532812040678F00575232 /* HouseListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7745327F2040678F00575232 /* HouseListTableViewController.xib */; };
+		77B137282044ABC300C9B07D /* SeasonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B137272044ABC300C9B07D /* SeasonTest.swift */; };
+		77B1372A2044ACE500C9B07D /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B137292044ACE500C9B07D /* Season.swift */; };
+		77B1372C2045698A00C9B07D /* EpisodeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B1372B2045698A00C9B07D /* EpisodeTest.swift */; };
+		77B1372E204569F100C9B07D /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B1372D204569F100C9B07D /* Episode.swift */; };
+		77B13731204637F000C9B07D /* SeasonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B1372F204637F000C9B07D /* SeasonDetailViewController.swift */; };
+		77B13732204637F000C9B07D /* SeasonDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77B13730204637F000C9B07D /* SeasonDetailViewController.xib */; };
+		77B137352046AAE200C9B07D /* SeasonListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B137332046AAE200C9B07D /* SeasonListTableViewController.swift */; };
+		77B137362046AAE200C9B07D /* SeasonListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77B137342046AAE200C9B07D /* SeasonListTableViewController.xib */; };
+		77B137392046CBE700C9B07D /* EpisodeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B137372046CBE700C9B07D /* EpisodeDetailViewController.swift */; };
+		77B1373A2046CBE700C9B07D /* EpisodeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77B137382046CBE700C9B07D /* EpisodeDetailViewController.xib */; };
+		77B1373C2046DA6A00C9B07D /* TargaryenIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77B1373B2046DA6A00C9B07D /* TargaryenIcon.jpg */; };
+		77B137432046FFDC00C9B07D /* EpisodeListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B137412046FFDC00C9B07D /* EpisodeListTableViewController.swift */; };
+		77B137442046FFDC00C9B07D /* EpisodeListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77B137422046FFDC00C9B07D /* EpisodeListTableViewController.xib */; };
+		77B3D2F12049B78600F9EEE5 /* episode41.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77B3D2E32049B78400F9EEE5 /* episode41.jpg */; };
+		77B3D2F22049B78600F9EEE5 /* episode31.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77B3D2E42049B78400F9EEE5 /* episode31.jpg */; };
+		77B3D2F32049B78600F9EEE5 /* episode42.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77B3D2E52049B78400F9EEE5 /* episode42.jpg */; };
+		77B3D2F42049B78600F9EEE5 /* episode62.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77B3D2E62049B78500F9EEE5 /* episode62.jpg */; };
+		77B3D2F52049B78600F9EEE5 /* episode51.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77B3D2E72049B78500F9EEE5 /* episode51.jpg */; };
+		77B3D2F62049B78600F9EEE5 /* episode21.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77B3D2E82049B78500F9EEE5 /* episode21.jpg */; };
+		77B3D2F72049B78600F9EEE5 /* episode52.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77B3D2E92049B78500F9EEE5 /* episode52.jpg */; };
+		77B3D2F82049B78600F9EEE5 /* episode61.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77B3D2EA2049B78500F9EEE5 /* episode61.jpg */; };
+		77B3D2F92049B78600F9EEE5 /* episode22.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77B3D2EB2049B78500F9EEE5 /* episode22.jpg */; };
+		77B3D2FA2049B78600F9EEE5 /* episode71.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77B3D2EC2049B78500F9EEE5 /* episode71.jpg */; };
+		77B3D2FB2049B78600F9EEE5 /* episode12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77B3D2ED2049B78600F9EEE5 /* episode12.jpg */; };
+		77B3D2FC2049B78600F9EEE5 /* episode32.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77B3D2EE2049B78600F9EEE5 /* episode32.jpg */; };
+		77B3D2FD2049B78600F9EEE5 /* episode11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77B3D2EF2049B78600F9EEE5 /* episode11.jpg */; };
+		77B3D2FE2049B78600F9EEE5 /* episode72.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77B3D2F02049B78600F9EEE5 /* episode72.jpg */; };
+		77B3D304204AF5EF00F9EEE5 /* person_cersei.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77B3D2FF204AF5EE00F9EEE5 /* person_cersei.jpg */; };
+		77B3D305204AF5EF00F9EEE5 /* person_daenerys.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77B3D300204AF5EE00F9EEE5 /* person_daenerys.jpg */; };
+		77B3D306204AF5EF00F9EEE5 /* person_tyrion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77B3D301204AF5EF00F9EEE5 /* person_tyrion.jpg */; };
+		77B3D308204AF5EF00F9EEE5 /* person_arya.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77B3D303204AF5EF00F9EEE5 /* person_arya.jpg */; };
+		77B3D30A204AF61200F9EEE5 /* person_robb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77B3D309204AF61200F9EEE5 /* person_robb.jpg */; };
 		77D7DB2D203C290800F0F1BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D7DB2C203C290800F0F1BD /* AppDelegate.swift */; };
 		77D7DB34203C290800F0F1BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77D7DB33203C290800F0F1BD /* Assets.xcassets */; };
 		77D7DB37203C290800F0F1BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77D7DB35203C290800F0F1BD /* LaunchScreen.storyboard */; };
@@ -39,7 +71,8 @@
 		77FDFD53204158810066B067 /* LannisterIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77FDFD4D204158800066B067 /* LannisterIcon.jpg */; };
 		77FDFD54204158810066B067 /* GreyjoyIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77FDFD4E204158800066B067 /* GreyjoyIcon.jpg */; };
 		77FDFD55204158810066B067 /* StarkIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77FDFD4F204158810066B067 /* StarkIcon.jpg */; };
-		77FDFD5920415A830066B067 /* TargaryenIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77FDFD5820415A830066B067 /* TargaryenIcon.jpg */; };
+		77FDFD5C2042B0380066B067 /* MembersListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FDFD5A2042B0380066B067 /* MembersListTableViewController.swift */; };
+		77FDFD5D2042B0380066B067 /* MembersListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77FDFD5B2042B0380066B067 /* MembersListTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +94,38 @@
 		7745327B203F607E00575232 /* WikiViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WikiViewController.xib; sourceTree = "<group>"; };
 		7745327E2040678F00575232 /* HouseListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListTableViewController.swift; sourceTree = "<group>"; };
 		7745327F2040678F00575232 /* HouseListTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HouseListTableViewController.xib; sourceTree = "<group>"; };
+		77B137272044ABC300C9B07D /* SeasonTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonTest.swift; sourceTree = "<group>"; };
+		77B137292044ACE500C9B07D /* Season.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
+		77B1372B2045698A00C9B07D /* EpisodeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeTest.swift; sourceTree = "<group>"; };
+		77B1372D204569F100C9B07D /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		77B1372F204637F000C9B07D /* SeasonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonDetailViewController.swift; sourceTree = "<group>"; };
+		77B13730204637F000C9B07D /* SeasonDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeasonDetailViewController.xib; sourceTree = "<group>"; };
+		77B137332046AAE200C9B07D /* SeasonListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonListTableViewController.swift; sourceTree = "<group>"; };
+		77B137342046AAE200C9B07D /* SeasonListTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeasonListTableViewController.xib; sourceTree = "<group>"; };
+		77B137372046CBE700C9B07D /* EpisodeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetailViewController.swift; sourceTree = "<group>"; };
+		77B137382046CBE700C9B07D /* EpisodeDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeDetailViewController.xib; sourceTree = "<group>"; };
+		77B1373B2046DA6A00C9B07D /* TargaryenIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = TargaryenIcon.jpg; path = "../../../../../../../Users/manuelperezsoriano/Downloads/Juego de Tronos/TargaryenIcon.jpg"; sourceTree = "<group>"; };
+		77B137412046FFDC00C9B07D /* EpisodeListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeListTableViewController.swift; sourceTree = "<group>"; };
+		77B137422046FFDC00C9B07D /* EpisodeListTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeListTableViewController.xib; sourceTree = "<group>"; };
+		77B3D2E32049B78400F9EEE5 /* episode41.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = episode41.jpg; sourceTree = "<group>"; };
+		77B3D2E42049B78400F9EEE5 /* episode31.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = episode31.jpg; sourceTree = "<group>"; };
+		77B3D2E52049B78400F9EEE5 /* episode42.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = episode42.jpg; sourceTree = "<group>"; };
+		77B3D2E62049B78500F9EEE5 /* episode62.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = episode62.jpg; sourceTree = "<group>"; };
+		77B3D2E72049B78500F9EEE5 /* episode51.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = episode51.jpg; sourceTree = "<group>"; };
+		77B3D2E82049B78500F9EEE5 /* episode21.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = episode21.jpg; sourceTree = "<group>"; };
+		77B3D2E92049B78500F9EEE5 /* episode52.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = episode52.jpg; sourceTree = "<group>"; };
+		77B3D2EA2049B78500F9EEE5 /* episode61.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = episode61.jpg; sourceTree = "<group>"; };
+		77B3D2EB2049B78500F9EEE5 /* episode22.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = episode22.jpg; sourceTree = "<group>"; };
+		77B3D2EC2049B78500F9EEE5 /* episode71.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = episode71.jpg; sourceTree = "<group>"; };
+		77B3D2ED2049B78600F9EEE5 /* episode12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = episode12.jpg; sourceTree = "<group>"; };
+		77B3D2EE2049B78600F9EEE5 /* episode32.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = episode32.jpg; sourceTree = "<group>"; };
+		77B3D2EF2049B78600F9EEE5 /* episode11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = episode11.jpg; sourceTree = "<group>"; };
+		77B3D2F02049B78600F9EEE5 /* episode72.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = episode72.jpg; sourceTree = "<group>"; };
+		77B3D2FF204AF5EE00F9EEE5 /* person_cersei.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person_cersei.jpg; sourceTree = "<group>"; };
+		77B3D300204AF5EE00F9EEE5 /* person_daenerys.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person_daenerys.jpg; sourceTree = "<group>"; };
+		77B3D301204AF5EF00F9EEE5 /* person_tyrion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person_tyrion.jpg; sourceTree = "<group>"; };
+		77B3D303204AF5EF00F9EEE5 /* person_arya.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person_arya.jpg; sourceTree = "<group>"; };
+		77B3D309204AF61200F9EEE5 /* person_robb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person_robb.jpg; sourceTree = "<group>"; };
 		77D7DB29203C290800F0F1BD /* Westeros_Ultimate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Westeros_Ultimate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77D7DB2C203C290800F0F1BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77D7DB33203C290800F0F1BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -89,7 +154,8 @@
 		77FDFD4D204158800066B067 /* LannisterIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LannisterIcon.jpg; sourceTree = "<group>"; };
 		77FDFD4E204158800066B067 /* GreyjoyIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GreyjoyIcon.jpg; sourceTree = "<group>"; };
 		77FDFD4F204158810066B067 /* StarkIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = StarkIcon.jpg; sourceTree = "<group>"; };
-		77FDFD5820415A830066B067 /* TargaryenIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = TargaryenIcon.jpg; path = ../../../../../../../Users/manuelperezsoriano/Downloads/TargaryenIcon.jpg; sourceTree = "<group>"; };
+		77FDFD5A2042B0380066B067 /* MembersListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembersListTableViewController.swift; sourceTree = "<group>"; };
+		77FDFD5B2042B0380066B067 /* MembersListTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MembersListTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +225,8 @@
 				77D7DB50203C453800F0F1BD /* SigilTest.swift */,
 				77D7DB54203C4FD700F0F1BD /* PersonTest.swift */,
 				77453274203E18A900575232 /* RepositoryTest.swift */,
+				77B137272044ABC300C9B07D /* SeasonTest.swift */,
+				77B1372B2045698A00C9B07D /* EpisodeTest.swift */,
 			);
 			path = Westeros_UltimateTests;
 			sourceTree = "<group>";
@@ -171,6 +239,8 @@
 				77D7DB57203C514A00F0F1BD /* Person.swift */,
 				77453276203E197000575232 /* Repository.swift */,
 				77453278203ECC0B00575232 /* DataFactory.swift */,
+				77B137292044ACE500C9B07D /* Season.swift */,
+				77B1372D204569F100C9B07D /* Episode.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -178,12 +248,31 @@
 		77D9B5E0203D9B7E00D50868 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				77B3D309204AF61200F9EEE5 /* person_robb.jpg */,
+				77B3D303204AF5EF00F9EEE5 /* person_arya.jpg */,
+				77B3D2FF204AF5EE00F9EEE5 /* person_cersei.jpg */,
+				77B3D300204AF5EE00F9EEE5 /* person_daenerys.jpg */,
+				77B3D301204AF5EF00F9EEE5 /* person_tyrion.jpg */,
+				77B3D2EF2049B78600F9EEE5 /* episode11.jpg */,
+				77B3D2ED2049B78600F9EEE5 /* episode12.jpg */,
+				77B3D2E82049B78500F9EEE5 /* episode21.jpg */,
+				77B3D2EB2049B78500F9EEE5 /* episode22.jpg */,
+				77B3D2E42049B78400F9EEE5 /* episode31.jpg */,
+				77B3D2EE2049B78600F9EEE5 /* episode32.jpg */,
+				77B3D2E32049B78400F9EEE5 /* episode41.jpg */,
+				77B3D2E52049B78400F9EEE5 /* episode42.jpg */,
+				77B3D2E72049B78500F9EEE5 /* episode51.jpg */,
+				77B3D2E92049B78500F9EEE5 /* episode52.jpg */,
+				77B3D2EA2049B78500F9EEE5 /* episode61.jpg */,
+				77B3D2E62049B78500F9EEE5 /* episode62.jpg */,
+				77B3D2EC2049B78500F9EEE5 /* episode71.jpg */,
+				77B3D2F02049B78600F9EEE5 /* episode72.jpg */,
 				77FDFD4C204158800066B067 /* ArrynIcon.jpg */,
 				77FDFD4B204158800066B067 /* BaratheonIcon.jpg */,
 				77FDFD4E204158800066B067 /* GreyjoyIcon.jpg */,
 				77FDFD4D204158800066B067 /* LannisterIcon.jpg */,
 				77FDFD4F204158810066B067 /* StarkIcon.jpg */,
-				77FDFD5820415A830066B067 /* TargaryenIcon.jpg */,
+				77B1373B2046DA6A00C9B07D /* TargaryenIcon.jpg */,
 				77FDFD4A204158800066B067 /* TullyIcon.jpg */,
 				77D9B5D5203D9B0500D50868 /* Arryn.png */,
 				77D9B5D4203D9B0500D50868 /* Baratheon.png */,
@@ -199,12 +288,22 @@
 		77D9B5E5203D9E6C00D50868 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				7745327E2040678F00575232 /* HouseListTableViewController.swift */,
+				7745327F2040678F00575232 /* HouseListTableViewController.xib */,
 				77D9B5E1203D9CEB00D50868 /* HouseDetailViewController.swift */,
 				77D9B5E2203D9CEB00D50868 /* HouseDetailViewController.xib */,
 				7745327A203F607E00575232 /* WikiViewController.swift */,
 				7745327B203F607E00575232 /* WikiViewController.xib */,
-				7745327E2040678F00575232 /* HouseListTableViewController.swift */,
-				7745327F2040678F00575232 /* HouseListTableViewController.xib */,
+				77FDFD5A2042B0380066B067 /* MembersListTableViewController.swift */,
+				77FDFD5B2042B0380066B067 /* MembersListTableViewController.xib */,
+				77B137332046AAE200C9B07D /* SeasonListTableViewController.swift */,
+				77B137342046AAE200C9B07D /* SeasonListTableViewController.xib */,
+				77B1372F204637F000C9B07D /* SeasonDetailViewController.swift */,
+				77B13730204637F000C9B07D /* SeasonDetailViewController.xib */,
+				77B137412046FFDC00C9B07D /* EpisodeListTableViewController.swift */,
+				77B137422046FFDC00C9B07D /* EpisodeListTableViewController.xib */,
+				77B137372046CBE700C9B07D /* EpisodeDetailViewController.swift */,
+				77B137382046CBE700C9B07D /* EpisodeDetailViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -293,23 +392,47 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77B3D2F12049B78600F9EEE5 /* episode41.jpg in Resources */,
+				77B13732204637F000C9B07D /* SeasonDetailViewController.xib in Resources */,
+				77B3D2F82049B78600F9EEE5 /* episode61.jpg in Resources */,
+				77B3D2FB2049B78600F9EEE5 /* episode12.jpg in Resources */,
 				77D9B5DF203D9B0600D50868 /* Targaryen.png in Resources */,
+				77B3D2FE2049B78600F9EEE5 /* episode72.jpg in Resources */,
+				77B3D2F52049B78600F9EEE5 /* episode51.jpg in Resources */,
+				77B3D304204AF5EF00F9EEE5 /* person_cersei.jpg in Resources */,
+				77B137362046AAE200C9B07D /* SeasonListTableViewController.xib in Resources */,
+				77B3D30A204AF61200F9EEE5 /* person_robb.jpg in Resources */,
+				77B3D2FC2049B78600F9EEE5 /* episode32.jpg in Resources */,
+				77FDFD5D2042B0380066B067 /* MembersListTableViewController.xib in Resources */,
+				77B3D2FA2049B78600F9EEE5 /* episode71.jpg in Resources */,
+				77B3D2F62049B78600F9EEE5 /* episode21.jpg in Resources */,
+				77B3D2F72049B78600F9EEE5 /* episode52.jpg in Resources */,
 				77D9B5DE203D9B0600D50868 /* Lannister.png in Resources */,
 				7745327D203F607E00575232 /* WikiViewController.xib in Resources */,
+				77B3D2F22049B78600F9EEE5 /* episode31.jpg in Resources */,
 				77FDFD50204158810066B067 /* TullyIcon.jpg in Resources */,
 				77FDFD54204158810066B067 /* GreyjoyIcon.jpg in Resources */,
 				77D9B5D9203D9B0600D50868 /* Greyjoy.png in Resources */,
-				77FDFD5920415A830066B067 /* TargaryenIcon.jpg in Resources */,
 				774532812040678F00575232 /* HouseListTableViewController.xib in Resources */,
+				77B3D2F32049B78600F9EEE5 /* episode42.jpg in Resources */,
 				77D9B5DD203D9B0600D50868 /* Stark.png in Resources */,
 				77D7DB37203C290800F0F1BD /* LaunchScreen.storyboard in Resources */,
 				77D9B5DC203D9B0600D50868 /* Arryn.png in Resources */,
+				77B1373C2046DA6A00C9B07D /* TargaryenIcon.jpg in Resources */,
 				77FDFD55204158810066B067 /* StarkIcon.jpg in Resources */,
 				77FDFD53204158810066B067 /* LannisterIcon.jpg in Resources */,
+				77B3D2F42049B78600F9EEE5 /* episode62.jpg in Resources */,
 				77FDFD52204158810066B067 /* ArrynIcon.jpg in Resources */,
+				77B137442046FFDC00C9B07D /* EpisodeListTableViewController.xib in Resources */,
+				77B1373A2046CBE700C9B07D /* EpisodeDetailViewController.xib in Resources */,
+				77B3D306204AF5EF00F9EEE5 /* person_tyrion.jpg in Resources */,
 				77D9B5E4203D9CEB00D50868 /* HouseDetailViewController.xib in Resources */,
 				77D9B5DA203D9B0600D50868 /* Tully.png in Resources */,
+				77B3D2F92049B78600F9EEE5 /* episode22.jpg in Resources */,
+				77B3D305204AF5EF00F9EEE5 /* person_daenerys.jpg in Resources */,
 				77D7DB34203C290800F0F1BD /* Assets.xcassets in Resources */,
+				77B3D308204AF5EF00F9EEE5 /* person_arya.jpg in Resources */,
+				77B3D2FD2049B78600F9EEE5 /* episode11.jpg in Resources */,
 				77D9B5DB203D9B0600D50868 /* Baratheon.png in Resources */,
 				77FDFD51204158810066B067 /* BaratheonIcon.jpg in Resources */,
 			);
@@ -330,10 +453,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				77453277203E197000575232 /* Repository.swift in Sources */,
+				77B137432046FFDC00C9B07D /* EpisodeListTableViewController.swift in Sources */,
 				7745327C203F607E00575232 /* WikiViewController.swift in Sources */,
 				77D9B5E3203D9CEB00D50868 /* HouseDetailViewController.swift in Sources */,
+				77B137352046AAE200C9B07D /* SeasonListTableViewController.swift in Sources */,
+				77FDFD5C2042B0380066B067 /* MembersListTableViewController.swift in Sources */,
+				77B137392046CBE700C9B07D /* EpisodeDetailViewController.swift in Sources */,
+				77B1372A2044ACE500C9B07D /* Season.swift in Sources */,
 				77D7DB53203C4A7800F0F1BD /* Sigil.swift in Sources */,
+				77B13731204637F000C9B07D /* SeasonDetailViewController.swift in Sources */,
 				77453273203DF11400575232 /* UIViewController+Additions.swift in Sources */,
+				77B1372E204569F100C9B07D /* Episode.swift in Sources */,
 				77D7DB4F203C3D1000F0F1BD /* House.swift in Sources */,
 				774532802040678F00575232 /* HouseListTableViewController.swift in Sources */,
 				77D7DB2D203C290800F0F1BD /* AppDelegate.swift in Sources */,
@@ -347,9 +477,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				77D7DB51203C453800F0F1BD /* SigilTest.swift in Sources */,
+				77B1372C2045698A00C9B07D /* EpisodeTest.swift in Sources */,
 				77D7DB4D203C3A4A00F0F1BD /* HouseTest.swift in Sources */,
 				77D7DB55203C4FD700F0F1BD /* PersonTest.swift in Sources */,
 				77453275203E18A900575232 /* RepositoryTest.swift in Sources */,
+				77B137282044ABC300C9B07D /* SeasonTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

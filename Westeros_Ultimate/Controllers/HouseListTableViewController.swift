@@ -8,10 +8,19 @@
 
 import UIKit
 
+let HOUSE_KEY = "HouseKey"
+let HOUSE_DID_CHANGE_NOTIFICATION_NAME = "HouseDidChange"
+
+protocol HouseListTableViewControllerDelegate {
+    // should, will, did
+    func houseListTableViewController(_ viewController: HouseListTableViewController, didSelectHouse: House)
+}
+
 class HouseListTableViewController: UITableViewController {
     
     // MARK: - Properties
     let model: [House]
+    var delegate: HouseListTableViewControllerDelegate?
 
     // MARK: - Initialization
     init(model: [House]){
@@ -27,11 +36,6 @@ class HouseListTableViewController: UITableViewController {
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     // MARK: - Table view data source
@@ -64,13 +68,27 @@ class HouseListTableViewController: UITableViewController {
     
     // MARK: - Table View Delegate
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         // Averiguar que casa han pulsado
         let house = model[indexPath.row]
         
+        // Avisamos al delegado
+        delegate?.houseListTableViewController(self, didSelectHouse: house)
+        
+        // Mandamos tambien la informacion a traves de notificaciones
+        let notificationCenter = NotificationCenter.default
+        let notificacion = Notification(name: Notification.Name(HOUSE_DID_CHANGE_NOTIFICATION_NAME), object: self, userInfo: [HOUSE_KEY: house])
+        
+        notificationCenter.post(notificacion)
+        
         // Crear un controlador de detalle de esa casa
-        let viewController = HouseDetailViewController(model: house)
+        //let viewController = HouseDetailViewController(model: house)
         
         // Hacer un push
-        navigationController?.pushViewController(viewController, animated: true)
+        //navigationController?.pushViewController(viewController, animated: true)
+        
+        // Guardar las coordenadas (section, row) de la ultima casa seleccionada
+        //saveLastSelectedHouse(at: indexPath.row)
     }
 }
+

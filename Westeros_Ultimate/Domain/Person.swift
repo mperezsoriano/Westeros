@@ -33,21 +33,32 @@ extension Person {
 
 // MARK: - Proxy
 extension Person {
-    var proxy: String {
+    var proxyForEquality: String {
         return "\(name) \(alias) \(house.name)"
+    }
+    
+    var proxyForComparison: String {
+        return "\(name) \(house.name)"
     }
 }
 
 // MARK: - Hashable
 extension Person: Hashable {
     var hashValue: Int {
-        return proxy.hashValue
+        return proxyForEquality.hashValue
     }
 }
 
 // MARK: - Equatable
 extension Person: Equatable {
     static func == (lhs: Person, rhs: Person) -> Bool {
-        return lhs.proxy == rhs.proxy
+        return lhs.proxyForEquality == rhs.proxyForEquality
+    }
+}
+
+// MARK: - Comparable
+extension Person: Comparable {
+    static func <(lhs: Person, rhs: Person) -> Bool {
+        return lhs.proxyForEquality < rhs.proxyForEquality
     }
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HouseDetailViewController: UIViewController {
+class HouseDetailViewController: UIViewController, UITabBarControllerDelegate {
 
     // MARK: - Outlets
     @IBOutlet weak var houseNameLabel: UILabel!
@@ -16,7 +16,7 @@ class HouseDetailViewController: UIViewController {
     @IBOutlet weak var houseWordsLabel: UILabel!
     
     // MARK: - Properties
-    let model: House
+    var model: House
     
     // MARK: - Initialization
     init(model: House) {
@@ -28,16 +28,16 @@ class HouseDetailViewController: UIViewController {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+        
     // MARK: - Life Cycle
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super .viewWillAppear(animated)
         setupUI()
         syncModelWithView()
     }
 }
 
-// MARK: - HouseDetailViewController
+// MARK: - Synchronization
 extension HouseDetailViewController {
     func syncModelWithView() {
         houseNameLabel.text = "House \(model.name)"
@@ -50,7 +50,11 @@ extension HouseDetailViewController {
 extension HouseDetailViewController {
     func setupUI() {
         let wikiButton = UIBarButtonItem(title: "Wiki", style: .plain, target: self, action: #selector(displayWiki))
-        navigationItem.rightBarButtonItem = wikiButton
+        let membersButton  = UIBarButtonItem(title: "Members", style: .plain, target: self, action: #selector(displayMembers))
+        if (model.sortedMembers.count == 0) {
+            membersButton.isEnabled = false
+        }
+        navigationItem.rightBarButtonItems = [membersButton, wikiButton]
     }
 }
 
@@ -62,4 +66,21 @@ extension HouseDetailViewController {
         // Hacemos un push
         navigationController?.pushViewController(wikiViewController, animated: true)
     }
+
+    @objc func displayMembers() {
+        // Creamos el MembersVC
+        let membersListViewController = MembersListTableViewController(model: model.sortedMembers)
+    
+       // Hacemos un push
+        navigationController?.pushViewController(membersListViewController, animated: true)
+    }
 }
+
+extension HouseDetailViewController: HouseListTableViewControllerDelegate {
+    func houseListTableViewController(_ viewController: HouseListTableViewController, didSelectHouse: House) {
+        self.model = didSelectHouse
+        setupUI()
+        syncModelWithView()
+    }
+}
+

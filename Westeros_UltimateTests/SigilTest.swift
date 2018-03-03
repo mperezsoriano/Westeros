@@ -20,7 +20,7 @@ class SigilTest: XCTestCase {
     }
     
     func testSigilExistence() {
-        let starkSigil = Sigil(image: UIImage(), description: "Lobo Huargo")
+        let starkSigil = Sigil(image: UIImage(), iconImage: UIImage(named: "StarkIcon.jpg")!, description: "Lobo Huargo")
         XCTAssertNotNil(starkSigil)
     }
 }

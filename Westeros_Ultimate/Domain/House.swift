@@ -49,6 +49,12 @@ extension House {
     }
 }
 
+extension House {
+    var sortedMembers: [Person] {
+        return _members.sorted()
+    }
+}
+
 // MARK: - Proxy
 extension House {
     var proxy: String {

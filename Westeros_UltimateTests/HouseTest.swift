@@ -22,8 +22,8 @@ class HouseTest: XCTestCase {
     var tyrion: Person!
     
     override func setUp() {
-        starkSigil = Sigil(image: UIImage(), description: "Lobo Huargo")
-        lannisterSigil = Sigil(image: UIImage(), description: "Leon Rampante")
+        starkSigil = Sigil(image: UIImage(),  iconImage: UIImage(named: "StarkIcon.jpg")!, description: "Lobo Huargo")
+        lannisterSigil = Sigil(image: UIImage(),  iconImage: UIImage(named: "LannisterIcon.jpg")!, description: "Leon Rampante")
         
         starkHouse = House(name: "Stark", sigil: starkSigil, words: "Se acerca el invierno", wiki: URL(string: "http://awoiaf.westeros.org/index.php/House_Stark")!)
         lannisterHouse = House(name: "Lannister", sigil: lannisterSigil, words: "Oye mi rugido", wiki: URL(string: "http://awoiaf.westeros.org/index.php/House_Lannister")!)
@@ -73,5 +73,14 @@ class HouseTest: XCTestCase {
     
     func testHouseComparison() {
         XCTAssertLessThan(lannisterHouse, starkHouse)
+    }
+    
+    func testHouseReturnsSortedArrayOfMembers() {
+        starkHouse.add(persons: robb, arya)
+        XCTAssertEqual(starkHouse.sortedMembers, [arya, robb])
+    }
+    
+    func testHouse() {
+        
     }
 }

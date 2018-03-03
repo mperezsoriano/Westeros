@@ -23,8 +23,8 @@ class SeasonTest: XCTestCase {
         inputFormatter.dateFormat = "dd-MM-yyyy"
         firstSeason =  Season(nameOfSeason: "Game of Thrones (season 1)", releaseData: inputFormatter.date(from: "01-01-2011")!)
         secondSeason =  Season(nameOfSeason: "Game of Thrones (season 2)", releaseData: inputFormatter.date(from: "01-01-2012")!)
-        episode1 = Episode(title: "Winter is Comming", releaseDate:  inputFormatter.date(from: "17-04-2011")!, season: firstSeason, image: UIImage(named: "episode11.png")!, summary: "")
-        episode2 = Episode(title: "The Kingsroad", releaseDate:  inputFormatter.date(from: "24-04-2011")!, season: firstSeason, image: UIImage(named: "episode12.png")!, summary: "")
+        episode1 = Episode(title: "Winter is Comming", releaseDate:  inputFormatter.date(from: "17-04-2011")!, season: firstSeason, image: UIImage(named: "episode11.jpg")!, summary: "")
+        episode2 = Episode(title: "The Kingsroad", releaseDate:  inputFormatter.date(from: "24-04-2011")!, season: firstSeason, image: UIImage(named: "episode12.jpg")!, summary: "")
     }
     
     override func tearDown() {

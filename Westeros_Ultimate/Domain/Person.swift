@@ -6,22 +6,24 @@
 //  Copyright © 2018 Manuel Perez Soriano. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 // MARK: - Person
 final class Person {
     let name: String
     let alias: String
     let house: House
+    let image: UIImage
     
-    init(name: String, alias: String, house: House) {
+    init(name: String, alias: String, house: House, image: UIImage) {
         self.name = name
         self.alias = alias
         self.house = house
+        self.image = image
     }
     
-    convenience init(name: String, house: House) {
-        self.init(name: name, alias: "", house: house)
+    convenience init(name: String, house: House, image: UIImage) {
+        self.init(name: name, alias: "", house: house, image: image)
     }
 }
 

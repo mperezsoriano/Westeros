@@ -106,12 +106,12 @@ final class DataFactory: DataFactoy{
         let greyjoyHouse = House(name: "Greyjoy", sigil: greyjoySigil, words: "Nosotros no sembramos!", wiki: URL(string: "https://awoiaf.westeros.org/index.php/House_Greyjoy")!)
         
         // Character creation
-        let robb = Person(name: "Robb", alias: "El Joven Lobo", house: starkHouse)
-        let arya = Person(name: "Arya", house: starkHouse)
-        let tyrion = Person(name: "Tyrion", alias: "El Enano", house: lannisterHouse)
-        let cersei = Person(name: "Cersei", house: lannisterHouse)
-        let jaime = Person(name: "Jaime", alias: "el Matarreyes", house: lannisterHouse)
-        let daenerys = Person(name: "Daenerys", alias: "Madre de Dragones", house: targaryenHouse)
+        let robb = Person(name: "Robb", alias: "El Joven Lobo", house: starkHouse, image: UIImage(named: "person_robb.jpg")!)
+        let arya = Person(name: "Arya", house: starkHouse, image: UIImage(named: "person_arya.jpg")!)
+        let tyrion = Person(name: "Tyrion", alias: "El Enano", house: lannisterHouse, image: UIImage(named: "person_tyrion.jpg")!)
+        let cersei = Person(name: "Cersei", house: lannisterHouse, image: UIImage(named: "person_cersei.jpg")!)
+        let jaime = Person(name: "Jaime", alias: "el Matarreyes", house: lannisterHouse, image: UIImage(named: "person_jaime.jpg")!)
+        let daenerys = Person(name: "Daenerys", alias: "Madre de Dragones", house: targaryenHouse, image: UIImage(named: "person_daenerys.jpg")!)
         
         
         // Add character to houses

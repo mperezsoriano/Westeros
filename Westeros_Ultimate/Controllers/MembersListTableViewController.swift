@@ -68,8 +68,16 @@ class MembersListTableViewController: UITableViewController {
         super.viewWillDisappear(animated)
         
         // Nos damos de baja en las notificaciones
+        //let notificationCenter = NotificationCenter.default
+        //notificationCenter.removeObserver(self)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
         let notificationCenter = NotificationCenter.default
         notificationCenter.removeObserver(self)
+        
     }
     
     @objc func houseDidChange(notification: Notification) {
@@ -84,5 +92,16 @@ class MembersListTableViewController: UITableViewController {
         // Actualizar el modelo
         self.model = (house?.sortedMembers)!
         tableView.reloadData()
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // Averiguar que personaje se ha seleccionado
+        let personaje = model[indexPath.row]
+        
+        // Creamos un controlador de detalle de ese personaje
+        let viewController = MembersDetailViewController(model: personaje)
+       
+        // Hacemos un push
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }

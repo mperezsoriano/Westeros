@@ -29,9 +29,9 @@ class PersonTest: XCTestCase {
         starkHouse = House(name: "Stark", sigil: starkSigil, words: "Se acerca el invierno", wiki: URL(string: "http://awoiaf.westeros.org/index.php/House_Stark")!)
         lannisterHouse = House(name: "Lannister", sigil: lannisterSigil, words: "Oye mi rugido", wiki: URL(string: "http://awoiaf.westeros.org/index.php/House_Lannister")!)
         
-        robb = Person(name: "Robb", alias: "El Joven Lobo", house: starkHouse)
-        arya = Person(name: "Arya", house: starkHouse)
-        tyrion = Person(name: "Tyrion", alias: "El Enano", house: lannisterHouse)
+        robb = Person(name: "Robb", alias: "El Joven Lobo", house: starkHouse, image: UIImage(named: "person_robb.jpg")!)
+        arya = Person(name: "Arya", house: starkHouse, image: UIImage(named: "person_arya.jpg")!)
+        tyrion = Person(name: "Tyrion", alias: "El Enano", house: lannisterHouse, image: UIImage(named: "person_tyrion.jpg")!)
         
         
         super.setUp()
@@ -52,7 +52,7 @@ class PersonTest: XCTestCase {
     }
 
     func testPersonEquality() {
-        let enano = Person(name: "Tyrion", alias: "El Enano", house: lannisterHouse)
+        let enano = Person(name: "Tyrion", alias: "El Enano", house: lannisterHouse, image: UIImage(named: "person_tyrion.jpg")!)
         // Identidad
         XCTAssertEqual(robb, robb)
         // Igualdad

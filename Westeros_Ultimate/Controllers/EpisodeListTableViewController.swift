@@ -92,7 +92,7 @@ class EpisodeListTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // Averiguar que episodio de ha seleccionado
+        // Averiguar que episodio se ha seleccionado
         let episode = model[indexPath.row]
         
         // Avisamos al delegado

@@ -47,6 +47,9 @@
 		77B3D306204AF5EF00F9EEE5 /* person_tyrion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77B3D301204AF5EF00F9EEE5 /* person_tyrion.jpg */; };
 		77B3D308204AF5EF00F9EEE5 /* person_arya.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77B3D303204AF5EF00F9EEE5 /* person_arya.jpg */; };
 		77B3D30A204AF61200F9EEE5 /* person_robb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77B3D309204AF61200F9EEE5 /* person_robb.jpg */; };
+		77B3D30C204AFB2D00F9EEE5 /* person_jaime.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77B3D30B204AFB2D00F9EEE5 /* person_jaime.jpg */; };
+		77B3D30F204AFDF200F9EEE5 /* MembersDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B3D30D204AFDF200F9EEE5 /* MembersDetailViewController.swift */; };
+		77B3D310204AFDF200F9EEE5 /* MembersDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77B3D30E204AFDF200F9EEE5 /* MembersDetailViewController.xib */; };
 		77D7DB2D203C290800F0F1BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D7DB2C203C290800F0F1BD /* AppDelegate.swift */; };
 		77D7DB34203C290800F0F1BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77D7DB33203C290800F0F1BD /* Assets.xcassets */; };
 		77D7DB37203C290800F0F1BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77D7DB35203C290800F0F1BD /* LaunchScreen.storyboard */; };
@@ -126,6 +129,9 @@
 		77B3D301204AF5EF00F9EEE5 /* person_tyrion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person_tyrion.jpg; sourceTree = "<group>"; };
 		77B3D303204AF5EF00F9EEE5 /* person_arya.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person_arya.jpg; sourceTree = "<group>"; };
 		77B3D309204AF61200F9EEE5 /* person_robb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person_robb.jpg; sourceTree = "<group>"; };
+		77B3D30B204AFB2D00F9EEE5 /* person_jaime.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person_jaime.jpg; sourceTree = "<group>"; };
+		77B3D30D204AFDF200F9EEE5 /* MembersDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembersDetailViewController.swift; sourceTree = "<group>"; };
+		77B3D30E204AFDF200F9EEE5 /* MembersDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MembersDetailViewController.xib; sourceTree = "<group>"; };
 		77D7DB29203C290800F0F1BD /* Westeros_Ultimate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Westeros_Ultimate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77D7DB2C203C290800F0F1BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77D7DB33203C290800F0F1BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -248,6 +254,7 @@
 		77D9B5E0203D9B7E00D50868 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				77B3D30B204AFB2D00F9EEE5 /* person_jaime.jpg */,
 				77B3D309204AF61200F9EEE5 /* person_robb.jpg */,
 				77B3D303204AF5EF00F9EEE5 /* person_arya.jpg */,
 				77B3D2FF204AF5EE00F9EEE5 /* person_cersei.jpg */,
@@ -296,6 +303,8 @@
 				7745327B203F607E00575232 /* WikiViewController.xib */,
 				77FDFD5A2042B0380066B067 /* MembersListTableViewController.swift */,
 				77FDFD5B2042B0380066B067 /* MembersListTableViewController.xib */,
+				77B3D30D204AFDF200F9EEE5 /* MembersDetailViewController.swift */,
+				77B3D30E204AFDF200F9EEE5 /* MembersDetailViewController.xib */,
 				77B137332046AAE200C9B07D /* SeasonListTableViewController.swift */,
 				77B137342046AAE200C9B07D /* SeasonListTableViewController.xib */,
 				77B1372F204637F000C9B07D /* SeasonDetailViewController.swift */,
@@ -393,6 +402,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				77B3D2F12049B78600F9EEE5 /* episode41.jpg in Resources */,
+				77B3D310204AFDF200F9EEE5 /* MembersDetailViewController.xib in Resources */,
 				77B13732204637F000C9B07D /* SeasonDetailViewController.xib in Resources */,
 				77B3D2F82049B78600F9EEE5 /* episode61.jpg in Resources */,
 				77B3D2FB2049B78600F9EEE5 /* episode12.jpg in Resources */,
@@ -435,6 +445,7 @@
 				77B3D2FD2049B78600F9EEE5 /* episode11.jpg in Resources */,
 				77D9B5DB203D9B0600D50868 /* Baratheon.png in Resources */,
 				77FDFD51204158810066B067 /* BaratheonIcon.jpg in Resources */,
+				77B3D30C204AFB2D00F9EEE5 /* person_jaime.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +470,7 @@
 				77B137352046AAE200C9B07D /* SeasonListTableViewController.swift in Sources */,
 				77FDFD5C2042B0380066B067 /* MembersListTableViewController.swift in Sources */,
 				77B137392046CBE700C9B07D /* EpisodeDetailViewController.swift in Sources */,
+				77B3D30F204AFDF200F9EEE5 /* MembersDetailViewController.swift in Sources */,
 				77B1372A2044ACE500C9B07D /* Season.swift in Sources */,
 				77D7DB53203C4A7800F0F1BD /* Sigil.swift in Sources */,
 				77B13731204637F000C9B07D /* SeasonDetailViewController.swift in Sources */,

@@ -42,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UITabBarControllerDelegat
             masterHouseNavigationController,
             masterSeasonNavigationController
         ]
-        
+ 
         // Creamos los UIView Details
         let detailHouseController = HouseDetailViewController(model: houses.first!)
         let detailSeasonController = SeasonDetailViewController(model: season.first!)
@@ -54,12 +54,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UITabBarControllerDelegat
         navigatorSeasonController?.pushViewController(detailSeasonController, animated: true)
        
         // Aplicamos los controladores
-        masterHouseListController.delegate = detailHouseController
-        masterSeasonListcontroller.delegate = detailSeasonController
-        masterTabBarController.delegate = self
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            masterHouseListController.delegate = detailHouseController
+            masterSeasonListcontroller.delegate = detailSeasonController
+            masterTabBarController.delegate = self
+        } else if UIDevice.current.userInterfaceIdiom == .phone {
+            masterHouseListController.delegate = masterHouseListController
+            masterSeasonListcontroller.delegate = masterSeasonListcontroller
+        }
        
         let splitViewController = UISplitViewController()
-        splitViewController.viewControllers = [masterTabBarController, navigatorHouseController!, navigatorSeasonController!]
+        splitViewController.viewControllers = [masterTabBarController, navigatorHouseController!]
         
         // Asignamos el rootView
         window?.rootViewController = splitViewController

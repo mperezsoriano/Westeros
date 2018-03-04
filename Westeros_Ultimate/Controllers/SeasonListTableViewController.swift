@@ -77,5 +77,15 @@ class SeasonListTableViewController: UITableViewController {
         
         notificationCenter.post(notification)
     }
-    
+}
+
+extension SeasonListTableViewController: SeasonListTableViewControllerDelegate {
+    func seasonListTableViewController(_ viewController: SeasonListTableViewController, didSelectSeason: Season) {
+        
+        // Creamos un controlador de detalle de ese epidodio
+        let viewController = SeasonDetailViewController(model: didSelectSeason)
+        
+        // Hacemos un push
+        navigationController?.pushViewController(viewController, animated: true)
+    }
 }

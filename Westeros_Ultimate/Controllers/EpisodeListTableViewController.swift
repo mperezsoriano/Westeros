@@ -62,15 +62,21 @@ class EpisodeListTableViewController: UITableViewController {
         
         return cell!
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+        
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
         // Nos damos de alta en las notificaciones
         let notificationCenter = NotificationCenter.default
         notificationCenter.addObserver(self, selector: #selector(episodeDidChange), name: Notification.Name(SEASON_DID_CHANGE_NOTIFICATION_NAME), object: nil)
     }
+ 
+    deinit {
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.removeObserver(self)
+    }
     
+
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         

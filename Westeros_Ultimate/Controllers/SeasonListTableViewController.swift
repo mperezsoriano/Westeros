@@ -19,7 +19,7 @@ class SeasonListTableViewController: UITableViewController {
         
     // MARK: - Properties
     var model: [Season]
-    var delagate: SeasonListTableViewControllerDelegate?
+    var delegate: SeasonListTableViewControllerDelegate?
     
     // MARK: - Initializacion
     init(model: [Season]){
@@ -45,7 +45,6 @@ class SeasonListTableViewController: UITableViewController {
         return model.count
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cellId = "SeasonCell"
@@ -65,15 +64,14 @@ class SeasonListTableViewController: UITableViewController {
         return cell!
     }
     
-
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // Averiguar que temporada se ha pulsado
         let season = model[indexPath.row]
         
         // Avisamos al delegado
-        delagate?.seasonListTableViewController(self, didSelectSeason: season)
+        delegate?.seasonListTableViewController(self, didSelectSeason: season)
         
-        // Mandamos tambien una notificacion a trabes de notificaciones
+        // Mandamos tambien una notificacion a traves de notificaciones
         let notificationCenter = NotificationCenter.default
         let notification = Notification(name: Notification.Name(SEASON_DID_CHANGE_NOTIFICATION_NAME), object: self, userInfo: [SEASON_KEY: season])
         

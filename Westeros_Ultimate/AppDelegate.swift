@@ -55,11 +55,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UITabBarControllerDelegat
        
         // Aplicamos los controladores
         masterHouseListController.delegate = detailHouseController
-        masterSeasonListcontroller.delagate = detailSeasonController
+        masterSeasonListcontroller.delegate = detailSeasonController
         masterTabBarController.delegate = self
        
         let splitViewController = UISplitViewController()
-        splitViewController.viewControllers = [masterTabBarController, navigatorHouseController!]
+        splitViewController.viewControllers = [masterTabBarController, navigatorHouseController!, navigatorSeasonController!]
         
         // Asignamos el rootView
         window?.rootViewController = splitViewController

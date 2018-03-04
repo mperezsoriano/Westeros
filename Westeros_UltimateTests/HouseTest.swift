@@ -22,10 +22,10 @@ class HouseTest: XCTestCase {
     var tyrion: Person!
     
     override func setUp() {
-        starkSigil = Sigil(image: UIImage(),  iconImage: UIImage(named: "StarkIcon.jpg")!, description: "Lobo Huargo")
-        lannisterSigil = Sigil(image: UIImage(),  iconImage: UIImage(named: "LannisterIcon.jpg")!, description: "Leon Rampante")
+        starkSigil = Sigil(image: UIImage(named: "Stark.png")!, iconImage: UIImage(named: "StarkIcon.jpg")!, description: "Lobo Huargo")
+        lannisterSigil = Sigil(image: UIImage(named: "Lannister.png")!, iconImage: UIImage(named: "LannisterIcon.jpg")!, description: "Leon Rampante")
         
-        starkHouse = House(name: "Stark", sigil: starkSigil, words: "Se acerca el invierno", wiki: URL(string: "http://awoiaf.westeros.org/index.php/House_Stark")!)
+        starkHouse = House(name: "Stark", sigil: starkSigil, words: "Se acerca el invierno!", wiki: URL(string: "https://awoiaf.westeros.org/index.php/House_Stark")!)
         lannisterHouse = House(name: "Lannister", sigil: lannisterSigil, words: "Oye mi rugido", wiki: URL(string: "http://awoiaf.westeros.org/index.php/House_Lannister")!)
         
         robb = Person(name: "Robb", alias: "El Joven Lobo", house: starkHouse, image: UIImage(named: "person_robb.jpg")!)
@@ -44,9 +44,6 @@ class HouseTest: XCTestCase {
     }
     
     func testHouseAddPersons() {
-        XCTAssertEqual(starkHouse.count, 0)
-        starkHouse.add(person: robb)
-        XCTAssertEqual(starkHouse.count, 1)
         starkHouse.add(person: arya)
         XCTAssertEqual(starkHouse.count, 2)
         starkHouse.add(person: tyrion)
@@ -58,11 +55,12 @@ class HouseTest: XCTestCase {
     }
     
     func testHouseEquality() {
-        let starkHouseCopy = House(name: "Stark", sigil: starkSigil, words: "Se acerca el invierno", wiki: URL(string: "http://awoiaf.westeros.org/index.php/House_Stark")!)
+        let lannisterHouseCopy = House(name: "Lannister", sigil: lannisterSigil, words: "Oye mi rugido", wiki: URL(string: "http://awoiaf.westeros.org/index.php/House_Lannister")!)
+        let lannisterHouseCopyOne = House(name: "Lannister", sigil: lannisterSigil, words: "Oye mi rugido", wiki: URL(string: "http://awoiaf.westeros.org/index.php/House_Lannister")!)
         // Identidad
         XCTAssertEqual(starkHouse, starkHouse)
         // Igualdad
-        XCTAssertEqual(starkHouseCopy, starkHouse)
+        XCTAssertEqual(lannisterHouseCopyOne, lannisterHouseCopy)
         // Desigualdad
         XCTAssertNotEqual(starkHouse, lannisterHouse)
     }

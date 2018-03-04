@@ -139,6 +139,6 @@ final class DataFactory: DataFactoy{
     }
     
     func house(named: HouseName) -> House? {
-        return houses.filter{$0.name == named.toString()  }.first
+        return houses.filter{$0.name == named.toString() }.first
     }
 }

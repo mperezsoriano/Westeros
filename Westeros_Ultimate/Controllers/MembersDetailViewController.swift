@@ -33,16 +33,17 @@ class MembersDetailViewController: UIViewController {
         syncModelWithView()
     }
     
+
     override func viewWillAppear(_ animated: Bool) {
-        super .viewWillAppear(animated)
+        super.viewWillAppear(animated)
         
         // Nos damos de alta en las notificaciones
         let notificationCenter = NotificationCenter.default
         notificationCenter.addObserver(self, selector: #selector(memberDidChange), name: NSNotification.Name(rawValue: HOUSE_DID_CHANGE_NOTIFICATION_NAME), object: nil)
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
         
         // nos damos de baja en las notificaciones
         let notificationCenter = NotificationCenter.default

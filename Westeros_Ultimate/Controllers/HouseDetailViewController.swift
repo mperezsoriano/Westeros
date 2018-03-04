@@ -22,7 +22,6 @@ class HouseDetailViewController: UIViewController, UITabBarControllerDelegate {
     init(model: House) {
         self.model = model
         super.init(nibName: nil, bundle: nil)
-        title = model.name
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -40,6 +39,7 @@ class HouseDetailViewController: UIViewController, UITabBarControllerDelegate {
 // MARK: - Synchronization
 extension HouseDetailViewController {
     func syncModelWithView() {
+        title = model.name
         houseNameLabel.text = "House \(model.name)"
         sigilImageView.image = model.sigil.image
         houseWordsLabel.text = model.words
